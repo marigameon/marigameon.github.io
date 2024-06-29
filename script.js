@@ -34,9 +34,16 @@ function drop(e) {
     draggedItem.style.top = `${y}px`;
 }
 
+const scenarios = [
+    'images/original-scenario.jpg',
+    'images/new-scenario.jpg'
+];
+let currentScenarioIndex = 0;
+
 function changeScenario() {
+    currentScenarioIndex = (currentScenarioIndex + 1) % scenarios.length;
     const room = document.getElementById('room');
-    room.style.backgroundImage = 'url(images/new-scenario.jpg)'; // Define a nova imagem de fundo
+    room.style.backgroundImage = `url(${scenarios[currentScenarioIndex]})`; // Define a nova imagem de fundo
     room.style.backgroundSize = 'cover'; // Ajusta o tamanho da imagem para cobrir o contêiner
 }
 
