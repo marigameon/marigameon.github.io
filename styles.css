@@ -25,10 +25,10 @@ h1 {
 }
 
 #furniture1 {
-    width: 600px; /* Ajuste o tamanho conforme necessário */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
     height: auto;
-    top: 50px;
-    left: 50px;
+    top: 100px;
+    left: 100px;
 }
 
 #furniture2 {
