@@ -1,5 +1,6 @@
 :root {
-    --posdireita: 50px;
+    --posdireita: 750px;
+    --posdireitaedireita: 850px;
     --room-width: 80%;
     --room-height: 80vh;
     --furniture-border: 2px solid transparent;
@@ -74,7 +75,48 @@ h1 {
     top: 200px;
     left: var(--posdireita);
 }
-
+#furniture5 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 300px;
+    left: var(--posdireita);
+}
+#furniture6 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 350px;
+    left: var(--posdireita);
+}
+#furniture7 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 400px;
+    left: var(--posdireita);
+}
+#furniture8 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 450px;
+    left: var(--posdireita);
+}
+#furniture9 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 50px;
+    left: var(--posdireitaedireita);
+}
+#furniture10 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 100px;
+    left: var(--posdireitaedireita);
+}
+#furniture11 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 150px;
+    left: var(--posdireitaedireita);
+}
 .furniture.resizable {
     border: var(--resizable-border); /* Usa a variável de borda redimensionável */
 }
