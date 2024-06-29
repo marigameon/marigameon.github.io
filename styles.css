@@ -20,8 +20,6 @@ h1 {
 }
 
 .furniture {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
     position: absolute;
     cursor: grab;
 }
@@ -34,11 +32,15 @@ h1 {
 }
 
 #furniture2 {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     top: 50px;
     left: 200px;
 }
 
 #furniture3 {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     top: 50px;
     left: 350px;
 }
