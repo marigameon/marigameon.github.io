@@ -36,7 +36,8 @@ function drop(e) {
 
 const scenarios = [
     'images/original-scenario.jpg',
-    'images/new-scenario.jpg'
+    'images/new-scenario.jpg',
+    'images/casadebanho.jpg'
 ];
 let currentScenarioIndex = 0;
 
