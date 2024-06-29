@@ -1,3 +1,8 @@
+:root {
+    --posdireita: 800px;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -17,32 +22,55 @@ h1 {
     border: 2px solid #ccc;
     position: relative;
     background-color: #fff;
+    background-image: url('images/original-scenario.jpg'); /* Adiciona a imagem de fundo inicial */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
 }
 
 .furniture {
     position: absolute;
     cursor: grab;
+    border: 2px solid transparent;
 }
 
 #furniture1 {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 80px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     top: 50px;
-    left: 50px;
+    left: var(--posdireita);
 }
 
 #furniture2 {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 50px; /* Ajuste o tamanho conforme necessário */
     height: auto;
-    top: 50px;
-    left: 200px;
+    top: 100px;
+    left: var(--posdireita);
 }
 
 #furniture3 {
     width: 100px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     top: 50px;
-    left: 350px;
+    left: 50px;
+}
+
+#furniture4 {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: 200px;
+    left: var(--posdireita);
 }
 
 
+.furniture.resizable {
+    border: 2px dashed #ccc; /* Adiciona uma borda visível durante o redimensionamento */
+}
+
+.interact-resize-handle {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+}
