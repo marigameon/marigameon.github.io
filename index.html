@@ -1,93 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <title>Jogos Mari</title>
-<style>
-    body{
-            background-color: black;
-            font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-        h1 {
-            color:lightblue;
-        }
-        h2 {
-            color:pink;
-        }
-        p {
-            color: yellow;
-        }
-    </style>
-    <h1>Ola, mundo!</h1>
-    <p>Esta pagina e uma pagina de jogos.</p>
-    <h2>que jogo queres jogar?</h2>
-    <p>Eu adoro programar e criar coisas novas!</p>
-    <img src="rabisco.jpeg" alt="Imagem de exemplo">
-</head>
-
-
-
- <h1>Queres brincar?</h1>
-    <p>Clique no botão abaixo para mudar a cor de fundo.</p>
-    <button id="colorButton">fundo</button>
-    <p id="clickCount">Número de cliques: 0</p>
-
-    <script>
-        // Função para gerar uma cor aleatória em formato hexadecimal
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        let clickCount = 0;
-
-        // Adicionar um ouvinte de evento ao botão
-        document.getElementById('colorButton').addEventListener('click', function() {
-            // Mudar a cor de fundo para uma cor aleatória
-            document.body.style.backgroundColor = getRandomColor();
-            
-            // Incrementar e atualizar o contador de cliques
-            clickCount++;
-            document.getElementById('clickCount').innerText = 'Número de cliques: ' + clickCount;
-        });
-    </script>
-
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Interiores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Jogo de Adivinhação</h1>
-    <p>Tente adivinhar um número entre 1 e 100:</p>
-    <input type="number" id="guessInput" min="1" max="100">
-    <button id="submitGuess">Enviar Palpite</button>
-    <p id="result"></p>
-
-    <script>
-        // Gerar um número aleatório entre 1 e 100
-        const randomNumber = Math.floor(Math.random() * 100) + 1;
-        let attempts = 0;
-
-        // Adicionar um ouvinte de evento ao botão de enviar palpite
-        document.getElementById('submitGuess').addEventListener('click', function() {
-            // Obter o valor digitado pelo usuário
-            const guess = parseInt(document.getElementById('guessInput').value);
-
-            // Verificar se o palpite está correto
-            if (guess === randomNumber) {
-                document.getElementById('result').innerText = `Parabéns! Você acertou em ${attempts} tentativas.`;
-            } else if (guess < randomNumber) {
-                document.getElementById('result').innerText = 'Tente um número maior.';
-            } else {
-                document.getElementById('result').innerText = 'Tente um número menor.';
-            }
-
-            // Incrementar o número de tentativas
-            attempts++;
-        });
-    </script>
+    <h1>Design de Interiores</h1>
+    <div id="room">
+        <div id="furniture1" class="furniture" draggable="true"></div>
+        <div id="furniture2" class="furniture" draggable="true"></div>
+        <div id="furniture3" class="furniture" draggable="true"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
+
