@@ -20,26 +20,24 @@ h1 {
 }
 
 .furniture {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     position: absolute;
     cursor: grab;
 }
 
 #furniture1 {
-    background-color: red;
     top: 50px;
     left: 50px;
 }
 
 #furniture2 {
-    background-color: blue;
     top: 50px;
     left: 200px;
 }
 
 #furniture3 {
-    background-color: green;
     top: 50px;
     left: 350px;
 }
+
