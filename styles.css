@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#room {
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    position: relative;
+    background-color: #fff;
+}
+
+.furniture {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: grab;
+}
+
+#furniture1 {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+}
+
+#furniture2 {
+    background-color: blue;
+    top: 50px;
+    left: 200px;
+}
+
+#furniture3 {
+    background-color: green;
+    top: 50px;
+    left: 350px;
+}
