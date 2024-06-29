@@ -27,6 +27,8 @@ h1 {
 }
 
 #furniture1 {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     top: 50px;
     left: 50px;
 }
